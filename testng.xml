@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon Suite">
+  <test name="Amazon Login-Logout">
+    <classes>
+      <class name="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Amazon AddToWishList-AddToCart">
+    <classes>
+      <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

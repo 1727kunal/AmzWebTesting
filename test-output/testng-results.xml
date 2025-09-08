@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Moved to the element Accounts & Lists...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign In button...]]>
+    </line>
+    <line>
+      <![CDATA[Mobile or Email is entered...]]>
+    </line>
+    <line>
+      <![CDATA[Continue button is clicked...]]>
+    </line>
+    <line>
+      <![CDATA[Password is entered...]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button is clicked...]]>
+    </line>
+    <line>
+      <![CDATA[Moved to the element Accounts & Lists...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign Out button...]]>
+    </line>
+    <line>
+      <![CDATA[Moved to the element Accounts & Lists...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign In button...]]>
+    </line>
+    <line>
+      <![CDATA[Mobile or Email is entered...]]>
+    </line>
+    <line>
+      <![CDATA[Continue button is clicked...]]>
+    </line>
+    <line>
+      <![CDATA[Password is entered...]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button is clicked...]]>
+    </line>
+    <line>
+      <![CDATA[Searching Product...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on the product...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add To WishList Button...]]>
+    </line>
+    <line>
+      <![CDATA[Pop-up closed...]]>
+    </line>
+    <line>
+      <![CDATA[Moved to the element Accounts & Lists...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Your Wish List button...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add To Cart button...]]>
+    </line>
+    <line>
+      <![CDATA[Moved to the element Accounts & Lists...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign Out button...]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-09-08T11:38:22 IST" name="Amazon Suite" finished-at="2025-09-08T11:40:28 IST" duration-ms="125824">
+    <groups>
+    </groups>
+    <test started-at="2025-09-08T11:38:22 IST" name="Amazon Login-Logout" finished-at="2025-09-08T11:39:07 IST" duration-ms="44421">
+      <class name="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@702657cc]" started-at="2025-09-08T11:38:22 IST" name="launchBrowser" finished-at="2025-09-08T11:38:34 IST" duration-ms="11851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="performLoginAndLogout()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@702657cc]" started-at="2025-09-08T11:38:34 IST" name="performLoginAndLogout" finished-at="2025-09-08T11:39:01 IST" duration-ms="26912" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Moved to the element Accounts & Lists...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign In button...]]>
+            </line>
+            <line>
+              <![CDATA[Mobile or Email is entered...]]>
+            </line>
+            <line>
+              <![CDATA[Continue button is clicked...]]>
+            </line>
+            <line>
+              <![CDATA[Password is entered...]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button is clicked...]]>
+            </line>
+            <line>
+              <![CDATA[Moved to the element Accounts & Lists...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign Out button...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- performLoginAndLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@702657cc]" started-at="2025-09-08T11:39:01 IST" name="tearDown" finished-at="2025-09-08T11:39:07 IST" duration-ms="5511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzLoginAndLogout -->
+    </test> <!-- Amazon Login-Logout -->
+    <test started-at="2025-09-08T11:39:07 IST" name="Amazon AddToWishList-AddToCart" finished-at="2025-09-08T11:40:28 IST" duration-ms="81301">
+      <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@7a8c8dcf]" started-at="2025-09-08T11:39:07 IST" name="launchBrowser" finished-at="2025-09-08T11:39:17 IST" duration-ms="10715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fromAddToWishListToAddToCart()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@7a8c8dcf]" started-at="2025-09-08T11:39:17 IST" name="fromAddToWishListToAddToCart" finished-at="2025-09-08T11:40:22 IST" duration-ms="65028" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Moved to the element Accounts & Lists...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign In button...]]>
+            </line>
+            <line>
+              <![CDATA[Mobile or Email is entered...]]>
+            </line>
+            <line>
+              <![CDATA[Continue button is clicked...]]>
+            </line>
+            <line>
+              <![CDATA[Password is entered...]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button is clicked...]]>
+            </line>
+            <line>
+              <![CDATA[Searching Product...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on the product...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add To WishList Button...]]>
+            </line>
+            <line>
+              <![CDATA[Pop-up closed...]]>
+            </line>
+            <line>
+              <![CDATA[Moved to the element Accounts & Lists...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Your Wish List button...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add To Cart button...]]>
+            </line>
+            <line>
+              <![CDATA[Moved to the element Accounts & Lists...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign Out button...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fromAddToWishListToAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@7a8c8dcf]" started-at="2025-09-08T11:40:22 IST" name="tearDown" finished-at="2025-09-08T11:40:28 IST" duration-ms="5546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart -->
+    </test> <!-- Amazon AddToWishList-AddToCart -->
+  </suite> <!-- Amazon Suite -->
+</testng-results>
