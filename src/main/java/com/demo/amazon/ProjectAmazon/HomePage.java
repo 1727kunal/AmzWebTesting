@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 public class HomePage {
 	WebDriver driver;
@@ -33,30 +32,25 @@ public class HomePage {
 		Actions act = new Actions(driver);
 		act.moveToElement(tabAccountsAndListsElement).perform();
 		UtilityClass.waitToLoad(2000);
-		Reporter.log("Moved to the element Accounts & Lists...");
 	}
 
 	public void clickSignInBtn() {
 		signInBtnElement.click();
-		Reporter.log("Clicked on Sign In button...");
 		UtilityClass.waitToLoad(2000);
 	}
 
 	public void performSearch(String searchValue) {
 		searchTxtElement.sendKeys(searchValue + Keys.ENTER);
-		Reporter.log("Searching Product...");
 		UtilityClass.waitToLoad(2000);
 	}
 
 	public void clickYourWishlistButton() {
 		yourWishlistElement.click();
-		Reporter.log("Clicked on Your Wish List button...");
 		UtilityClass.waitToLoad(2000);
 	}
 
 	public void clickSignOutBtn() {
 		signOutBtnElement.click();
-		Reporter.log("Clicked on Sign Out button...");
 		UtilityClass.waitToLoad(1000);
 	}
 

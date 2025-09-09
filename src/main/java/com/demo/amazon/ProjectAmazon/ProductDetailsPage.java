@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 public class ProductDetailsPage {
 	WebDriver driver;
@@ -21,13 +20,13 @@ public class ProductDetailsPage {
 
 	public void clickOnWishListButton() {
 		addToWishListElement.click();
-		Reporter.log("Clicked on Add To WishList Button...");
+
 		UtilityClass.waitToLoad(5000);
 	}
 
 	public void clickOnClosePopUpButton() {
 		closePopUpBtnElement.click();
-		Reporter.log("Pop-up closed...");
+
 		UtilityClass.waitToLoad(2000);
 	}
 

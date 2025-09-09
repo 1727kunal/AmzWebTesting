@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 public class LoginPage {
 	WebDriver driver;
@@ -26,7 +25,7 @@ public class LoginPage {
 	}
 
 	public String getLoginHeader() {
-		Reporter.log("Header text Sign in or create account is visible...");
+
 		UtilityClass.waitToLoad(1000);
 		return headerTxtElement.getText();
 	}
@@ -34,25 +33,25 @@ public class LoginPage {
 	public void enterMobileOrEmail(String mobOrEmail) {
 		mobileTxtElement.sendKeys(mobOrEmail);
 		UtilityClass.waitToLoad(1000);
-		Reporter.log("Mobile or Email is entered...");
+
 	}
 
 	public void enterPassword(String password) {
 		passwordTxtElement.sendKeys(password);
 		UtilityClass.waitToLoad(2000);
-		Reporter.log("Password is entered...");
+
 	}
 
 	public void clickContinueButton() {
 		continueBtnElement.click();
 		UtilityClass.waitToLoad(1000);
-		Reporter.log("Continue button is clicked...");
+
 	}
 
 	public void clickSignInButton() {
 		signInBtnElement.click();
 		UtilityClass.waitToLoad(3000);
-		Reporter.log("SignIn button is clicked...");
+
 	}
 
 }
