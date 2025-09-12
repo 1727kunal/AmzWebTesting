@@ -58,5 +58,4 @@ public class HomePage {
 		UtilityClass.waitToLoad(2000);
 		return Integer.parseInt(cartCountElement.getText());
 	}
-
 }
