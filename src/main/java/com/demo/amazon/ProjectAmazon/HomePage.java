@@ -1,14 +1,19 @@
 package com.demo.amazon.ProjectAmazon;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 	WebDriver driver;
+	WebDriverWait wait;
 
 	@FindBy(xpath = "//a[@data-nav-role='signin']")
 	WebElement tabAccountsAndListsElement;
@@ -26,36 +31,37 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 	public void moveToAccountsTab() {
 		Actions act = new Actions(driver);
+		wait.until(ExpectedConditions.visibilityOf(tabAccountsAndListsElement));
 		act.moveToElement(tabAccountsAndListsElement).perform();
-		UtilityClass.waitToLoad(2000);
 	}
 
 	public void clickSignInBtn() {
+		wait.until(ExpectedConditions.visibilityOf(signInBtnElement));
 		signInBtnElement.click();
-		UtilityClass.waitToLoad(2000);
 	}
 
 	public void performSearch(String searchValue) {
+		wait.until(ExpectedConditions.visibilityOf(searchTxtElement));
 		searchTxtElement.sendKeys(searchValue + Keys.ENTER);
-		UtilityClass.waitToLoad(2000);
 	}
 
 	public void clickYourWishlistButton() {
+		wait.until(ExpectedConditions.visibilityOf(yourWishlistElement));
 		yourWishlistElement.click();
-		UtilityClass.waitToLoad(2000);
 	}
 
 	public void clickSignOutBtn() {
+		wait.until(ExpectedConditions.visibilityOf(signOutBtnElement));
 		signOutBtnElement.click();
-		UtilityClass.waitToLoad(1000);
 	}
 
 	public int productInCarts() {
-		UtilityClass.waitToLoad(2000);
+		wait.until(ExpectedConditions.visibilityOf(cartCountElement));
 		return Integer.parseInt(cartCountElement.getText());
 	}
 }

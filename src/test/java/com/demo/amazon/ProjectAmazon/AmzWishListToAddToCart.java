@@ -70,6 +70,7 @@ public class AmzWishListToAddToCart extends BaseClass {
 		objWishListDetailsPage.clickOnAddToCartButton();
 		Reporter.log("Clicked on Add To Cart button...");
 
+		UtilityClass.waitToLoad(5000);
 		Assert.assertEquals(objHomePage.productInCarts() > 0, true);
 
 		objHomePage.moveToAccountsTab();

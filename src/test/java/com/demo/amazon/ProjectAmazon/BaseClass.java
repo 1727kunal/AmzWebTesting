@@ -13,12 +13,10 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.amazon.in");
-		UtilityClass.waitToLoad(5000);
 	}
 
 	@AfterTest
 	public void tearDown() {
-		UtilityClass.waitToLoad(5000);
 		driver.quit();
 	}
 }
