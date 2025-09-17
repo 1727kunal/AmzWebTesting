@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment">
+      <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyCheckoutProcess"/>
+          <include name="fromAddToWishListToAddToCart"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

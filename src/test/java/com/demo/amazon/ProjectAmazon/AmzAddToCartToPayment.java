@@ -38,15 +38,15 @@ public class AmzAddToCartToPayment extends BaseClass {
 		objLoginPage.clickSignInButton();
 		Reporter.log("Clicked on Sign In button...");
 
-		objHomePage.performSearch("iPhone");
-		Reporter.log("Searched for product iPhone...");
-		UtilityClass.scrollPageVertically(driver, 400);
+		objHomePage.performSearch("xiaomi");
+		Reporter.log("Searched for product xiaomi...");
+		UtilityClass.scrollPageVertically(driver, 500);
 
 		objSearchResultPage.clickOnTheProduct();
 		Reporter.log("Clicked on 1st product from search result...");
 
 		Set<String> allHandlesSet = driver.getWindowHandles();
-		List<String> allHandlesList = new LinkedList<String>(allHandlesSet);
+		List<String> allHandlesList = new LinkedList<>(allHandlesSet);
 //		String parentWindowString = allHandlesList.get(0);
 		String productWindowString = allHandlesList.get(1);
 		driver.switchTo().window(productWindowString);
@@ -58,13 +58,17 @@ public class AmzAddToCartToPayment extends BaseClass {
 		UtilityClass.scrollPageVertically(driver, -600);
 		objProductDetailsPage.clickOnCartIcon();
 		objCartDetailsPage.clickOnProceedToBuyButton();
+		Reporter.log("Clicked on Proceed To Buy button...");
 
 		UtilityClass.scrollPageVertically(driver, 600);
 		objPaymentDetailsPage.clickOnCardRadioButton();
+		Reporter.log("Clicked on the Card Radio Button...");
 		UtilityClass.waitToLoad(1000);
 		objPaymentDetailsPage.clickOnAddNewCardLink();
+		Reporter.log("Clicked on the Add New Card Link...");
 		UtilityClass.waitToLoad(2000);
 		objPaymentDetailsPage.enterCreditCardNumber("1111222233334444");
+		Reporter.log("Credit card number entered...");
 		UtilityClass.waitToLoad(1000);
 	}
 }

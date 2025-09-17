@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 
 public class PaymentDetailsPage {
 	WebDriver driver;
@@ -31,20 +30,16 @@ public class PaymentDetailsPage {
 	public void clickOnCardRadioButton() {
 		wait.until(ExpectedConditions.visibilityOf(cardRadioElement));
 		cardRadioElement.click();
-		Reporter.log("Clicked on the Card Radio Button...");
 	}
 
 	public void clickOnAddNewCardLink() {
 		wait.until(ExpectedConditions.visibilityOf(addNewCardElement));
 		addNewCardElement.click();
-		Reporter.log("Clicked on the Add New Card Link...");
 	}
 
 	public void enterCreditCardNumber(String cardNum) {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(paymentFrameElement));
-		Reporter.log("Switched to Credit Card Details frame...");
 		wait.until(ExpectedConditions.visibilityOf(creditCardTxtElement));
 		creditCardTxtElement.sendKeys(cardNum);
-		Reporter.log("Credit card number entered...");
 	}
 }

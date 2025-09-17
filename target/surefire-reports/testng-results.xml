@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Moved to Accounts and List...]]>
@@ -44,7 +44,7 @@
       <![CDATA[Clicked on Sign In button...]]>
     </line>
     <line>
-      <![CDATA[Searched for product iPhone...]]>
+      <![CDATA[Searched for product xiaomi...]]>
     </line>
     <line>
       <![CDATA[Clicked on 1st product from search result...]]>
@@ -62,19 +62,61 @@
       <![CDATA[Clicked on Your Wish List button...]]>
     </line>
     <line>
-      <![CDATA[Clicked on Add To Cart button...]]>
+      <![CDATA[Product added to the cart...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Cart Icon...]]>
+    </line>
+    <line>
+      <![CDATA[Product deleted from the cart...]]>
+    </line>
+    <line>
+      <![CDATA[Moved to Accounts and List...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign In button...]]>
+    </line>
+    <line>
+      <![CDATA[Mobile number entered...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Continue button...]]>
+    </line>
+    <line>
+      <![CDATA[Password entered...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign In button...]]>
+    </line>
+    <line>
+      <![CDATA[Searched for product xiaomi...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on 1st product from search result...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Proceed To Buy button...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on the Card Radio Button...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on the Add New Card Link...]]>
+    </line>
+    <line>
+      <![CDATA[Credit card number entered...]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-15T21:41:12 IST" name="Amazon Suite" finished-at="2025-09-15T21:42:37 IST" duration-ms="85258">
+  <suite started-at="2025-09-17T18:43:55 IST" name="Amazon Suite" finished-at="2025-09-17T18:46:17 IST" duration-ms="141243">
     <groups>
     </groups>
-    <test started-at="2025-09-15T21:41:12 IST" name="Amazon Login-Logout" finished-at="2025-09-15T21:41:36 IST" duration-ms="24733">
+    <test started-at="2025-09-17T18:43:55 IST" name="Amazon Login-Logout" finished-at="2025-09-17T18:44:17 IST" duration-ms="21910">
       <class name="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-15T21:41:12 IST" name="launchBrowser" finished-at="2025-09-15T21:41:20 IST" duration-ms="8265" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-17T18:43:55 IST" name="launchBrowser" finished-at="2025-09-17T18:44:02 IST" duration-ms="6782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="performLoginAndLogout()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-15T21:41:20 IST" name="performLoginAndLogout" finished-at="2025-09-15T21:41:36 IST" duration-ms="15852" status="PASS">
+        <test-method signature="performLoginAndLogout()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-17T18:44:02 IST" name="performLoginAndLogout" finished-at="2025-09-17T18:44:17 IST" duration-ms="14615" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Moved to Accounts and List...]]>
@@ -102,19 +144,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- performLoginAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-15T21:41:36 IST" name="tearDown" finished-at="2025-09-15T21:41:36 IST" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzLoginAndLogout@402bba4f]" started-at="2025-09-17T18:44:17 IST" name="tearDown" finished-at="2025-09-17T18:44:17 IST" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demo.amazon.ProjectAmazon.AmzLoginAndLogout -->
     </test> <!-- Amazon Login-Logout -->
-    <test started-at="2025-09-15T21:41:36 IST" name="Amazon AddToWishList-AddToCart" finished-at="2025-09-15T21:42:37 IST" duration-ms="60466">
+    <test started-at="2025-09-17T18:44:17 IST" name="Amazon AddToWishList-AddToCart" finished-at="2025-09-17T18:45:16 IST" duration-ms="58581">
       <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-15T21:41:36 IST" name="launchBrowser" finished-at="2025-09-15T21:41:43 IST" duration-ms="6867" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-17T18:44:17 IST" name="launchBrowser" finished-at="2025-09-17T18:44:24 IST" duration-ms="6579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="fromAddToWishListToAddToCart()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-15T21:41:43 IST" name="fromAddToWishListToAddToCart" finished-at="2025-09-15T21:42:36 IST" duration-ms="53061" status="PASS">
+        <test-method signature="fromAddToWishListToAddToCart()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-17T18:44:24 IST" name="fromAddToWishListToAddToCart" finished-at="2025-09-17T18:45:15 IST" duration-ms="51461" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Moved to Accounts and List...]]>
@@ -135,7 +177,7 @@
               <![CDATA[Clicked on Sign In button...]]>
             </line>
             <line>
-              <![CDATA[Searched for product iPhone...]]>
+              <![CDATA[Searched for product xiaomi...]]>
             </line>
             <line>
               <![CDATA[Clicked on 1st product from search result...]]>
@@ -153,15 +195,73 @@
               <![CDATA[Clicked on Your Wish List button...]]>
             </line>
             <line>
-              <![CDATA[Clicked on Add To Cart button...]]>
+              <![CDATA[Product added to the cart...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Cart Icon...]]>
+            </line>
+            <line>
+              <![CDATA[Product deleted from the cart...]]>
             </line>
           </reporter-output>
         </test-method> <!-- fromAddToWishListToAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-15T21:42:36 IST" name="tearDown" finished-at="2025-09-15T21:42:37 IST" duration-ms="531" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@52bf72b5]" started-at="2025-09-17T18:45:15 IST" name="tearDown" finished-at="2025-09-17T18:45:16 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart -->
     </test> <!-- Amazon AddToWishList-AddToCart -->
+    <test started-at="2025-09-17T18:45:16 IST" name="Amazon AddToCart-Checkout" finished-at="2025-09-17T18:46:17 IST" duration-ms="60703">
+      <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@dd8ba08]" started-at="2025-09-17T18:45:16 IST" name="launchBrowser" finished-at="2025-09-17T18:45:22 IST" duration-ms="5651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCheckoutProcess()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@dd8ba08]" started-at="2025-09-17T18:45:22 IST" name="verifyCheckoutProcess" finished-at="2025-09-17T18:46:16 IST" duration-ms="54501" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Moved to Accounts and List...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign In button...]]>
+            </line>
+            <line>
+              <![CDATA[Mobile number entered...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Continue button...]]>
+            </line>
+            <line>
+              <![CDATA[Password entered...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign In button...]]>
+            </line>
+            <line>
+              <![CDATA[Searched for product xiaomi...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on 1st product from search result...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Proceed To Buy button...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on the Card Radio Button...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on the Add New Card Link...]]>
+            </line>
+            <line>
+              <![CDATA[Credit card number entered...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutProcess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@dd8ba08]" started-at="2025-09-17T18:46:16 IST" name="tearDown" finished-at="2025-09-17T18:46:17 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment -->
+    </test> <!-- Amazon AddToCart-Checkout -->
   </suite> <!-- Amazon Suite -->
 </testng-results>

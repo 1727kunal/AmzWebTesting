@@ -20,31 +20,43 @@
       <![CDATA[Clicked on Sign In button...]]>
     </line>
     <line>
-      <![CDATA[Searched for product iPhone...]]>
+      <![CDATA[Searched for product xiaomi...]]>
     </line>
     <line>
       <![CDATA[Clicked on 1st product from search result...]]>
     </line>
     <line>
-      <![CDATA[Clicked on Proceed To Buy button...]]>
+      <![CDATA[Clicked on Add To Wish List button...]]>
     </line>
     <line>
-      <![CDATA[Clicked on the Card Radio Button...]]>
+      <![CDATA[Pop-up closed...]]>
     </line>
     <line>
-      <![CDATA[Clicked on the Add New Card Link...]]>
+      <![CDATA[Moved to Accounts and List...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Your Wish List button...]]>
+    </line>
+    <line>
+      <![CDATA[Product added to the cart...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Cart Icon...]]>
+    </line>
+    <line>
+      <![CDATA[Product deleted from the cart...]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-17T12:48:15 IST" name="Default suite" finished-at="2025-09-17T12:49:22 IST" duration-ms="66537">
+  <suite started-at="2025-09-17T18:33:59 IST" name="Default suite" finished-at="2025-09-17T18:34:57 IST" duration-ms="58142">
     <groups>
     </groups>
-    <test started-at="2025-09-17T12:48:15 IST" name="Default test" finished-at="2025-09-17T12:49:22 IST" duration-ms="66537">
-      <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@22ff4249]" started-at="2025-09-17T12:48:16 IST" name="launchBrowser" finished-at="2025-09-17T12:48:23 IST" duration-ms="7975" status="PASS">
+    <test started-at="2025-09-17T18:33:59 IST" name="Default test" finished-at="2025-09-17T18:34:57 IST" duration-ms="58142">
+      <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@1a677343]" started-at="2025-09-17T18:33:59 IST" name="launchBrowser" finished-at="2025-09-17T18:34:05 IST" duration-ms="6383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyCheckoutProcess()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@22ff4249]" started-at="2025-09-17T12:48:24 IST" name="verifyCheckoutProcess" finished-at="2025-09-17T12:49:22 IST" duration-ms="57935" status="PASS">
+        <test-method signature="fromAddToWishListToAddToCart()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@1a677343]" started-at="2025-09-17T18:34:06 IST" name="fromAddToWishListToAddToCart" finished-at="2025-09-17T18:34:56 IST" duration-ms="50937" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Moved to Accounts and List...]]>
@@ -65,27 +77,39 @@
               <![CDATA[Clicked on Sign In button...]]>
             </line>
             <line>
-              <![CDATA[Searched for product iPhone...]]>
+              <![CDATA[Searched for product xiaomi...]]>
             </line>
             <line>
               <![CDATA[Clicked on 1st product from search result...]]>
             </line>
             <line>
-              <![CDATA[Clicked on Proceed To Buy button...]]>
+              <![CDATA[Clicked on Add To Wish List button...]]>
             </line>
             <line>
-              <![CDATA[Clicked on the Card Radio Button...]]>
+              <![CDATA[Pop-up closed...]]>
             </line>
             <line>
-              <![CDATA[Clicked on the Add New Card Link...]]>
+              <![CDATA[Moved to Accounts and List...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Your Wish List button...]]>
+            </line>
+            <line>
+              <![CDATA[Product added to the cart...]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Cart Icon...]]>
+            </line>
+            <line>
+              <![CDATA[Product deleted from the cart...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyCheckoutProcess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment@22ff4249]" started-at="2025-09-17T12:49:22 IST" name="tearDown" finished-at="2025-09-17T12:49:22 IST" duration-ms="502" status="PASS">
+        </test-method> <!-- fromAddToWishListToAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart@1a677343]" started-at="2025-09-17T18:34:56 IST" name="tearDown" finished-at="2025-09-17T18:34:57 IST" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

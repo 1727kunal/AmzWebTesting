@@ -14,6 +14,7 @@ public class AmzWishListToAddToCart extends BaseClass {
 	SearchResultPage objSearchResultPage;
 	ProductDetailsPage objProductDetailsPage;
 	WishListDetailsPage objWishListDetailsPage;
+	CartDetailsPage objCartDetailsPage;
 
 	@Test
 	void fromAddToWishListToAddToCart() {
@@ -22,6 +23,7 @@ public class AmzWishListToAddToCart extends BaseClass {
 		objSearchResultPage = new SearchResultPage(driver);
 		objProductDetailsPage = new ProductDetailsPage(driver);
 		objWishListDetailsPage = new WishListDetailsPage(driver);
+		objCartDetailsPage = new CartDetailsPage(driver);
 
 		objHomePage.moveToAccountsTab();
 		Reporter.log("Moved to Accounts and List...");
@@ -37,9 +39,9 @@ public class AmzWishListToAddToCart extends BaseClass {
 		objLoginPage.clickSignInButton();
 		Reporter.log("Clicked on Sign In button...");
 
-		objHomePage.performSearch("iphone");
-		Reporter.log("Searched for product iPhone...");
-		UtilityClass.scrollPageVertically(driver, 400);
+		objHomePage.performSearch("xiaomi");
+		Reporter.log("Searched for product xiaomi...");
+		UtilityClass.scrollPageVertically(driver, 500);
 
 		objSearchResultPage.clickOnTheProduct();
 		Reporter.log("Clicked on 1st product from search result...");
@@ -59,7 +61,7 @@ public class AmzWishListToAddToCart extends BaseClass {
 		UtilityClass.waitToLoad(1000);
 		driver.switchTo().window(parentWindowString);
 		driver.navigate().refresh();
-		UtilityClass.scrollPageVertically(driver, -400);
+		UtilityClass.scrollPageVertically(driver, -500);
 
 		objHomePage.moveToAccountsTab();
 		Reporter.log("Moved to Accounts and List...");
@@ -68,10 +70,16 @@ public class AmzWishListToAddToCart extends BaseClass {
 		Reporter.log("Clicked on Your Wish List button...");
 
 		objWishListDetailsPage.clickOnAddToCartButton();
-		Reporter.log("Clicked on Add To Cart button...");
+		Reporter.log("Product added to the cart...");
 
 		UtilityClass.waitToLoad(5000);
 		Assert.assertEquals(objHomePage.productInCarts() > 0, true);
+
+		objProductDetailsPage.clickOnCartIcon();
+		Reporter.log("Clicked on Cart Icon...");
+
+		objCartDetailsPage.clickOnDeleteItemButton();
+		Reporter.log("Product deleted from the cart...");
 
 		objHomePage.moveToAccountsTab();
 		objHomePage.clickSignOutBtn();

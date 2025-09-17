@@ -11,4 +11,9 @@
       <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Amazon AddToCart-Checkout">
+    <classes>
+      <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

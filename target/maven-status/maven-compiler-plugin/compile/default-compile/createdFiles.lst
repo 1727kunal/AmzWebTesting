@@ -1,6 +1,8 @@
 com\demo\amazon\ProjectAmazon\SearchResultPage.class
-com\demo\amazon\ProjectAmazon\WishListDetailsPage.class
 com\demo\amazon\ProjectAmazon\LoginPage.class
 com\demo\amazon\ProjectAmazon\ProductDetailsPage.class
+com\demo\amazon\ProjectAmazon\PaymentDetailsPage.class
+com\demo\amazon\ProjectAmazon\CartDetailsPage.class
+com\demo\amazon\ProjectAmazon\WishListDetailsPage.class
 com\demo\amazon\ProjectAmazon\HomePage.class
 com\demo\amazon\ProjectAmazon\UtilityClass.class

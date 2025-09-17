@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 
 public class CartDetailsPage {
 	WebDriver driver;
@@ -16,6 +15,8 @@ public class CartDetailsPage {
 
 	@FindBy(name = "proceedToRetailCheckout")
 	WebElement proceedToBuyBtnElement;
+	@FindBy(xpath = "(//div[@class='a-row sc-action-links']/child::span[@data-action='delete-active'])[1]")
+	WebElement deleteBtnElement;
 
 	public CartDetailsPage(WebDriver driver) {
 		this.driver = driver;
@@ -26,7 +27,10 @@ public class CartDetailsPage {
 	public void clickOnProceedToBuyButton() {
 		wait.until(ExpectedConditions.visibilityOf(proceedToBuyBtnElement));
 		proceedToBuyBtnElement.click();
-		Reporter.log("Clicked on Proceed To Buy button...");
 	}
 
+	public void clickOnDeleteItemButton() {
+		wait.until(ExpectedConditions.visibilityOf(deleteBtnElement));
+		deleteBtnElement.click();
+	}
 }
