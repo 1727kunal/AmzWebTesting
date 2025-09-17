@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Amazon Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Amazon Login-Logout(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout">
+      <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment">
         <methods>
           <include name="tearDown"/>
-          <include name="performLoginAndLogout"/>
+          <include name="verifyCheckoutProcess"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.demo.amazon.ProjectAmazon.AmzLoginAndLogout -->
+      </class> <!-- com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment -->
     </classes>
-  </test> <!-- Amazon Login-Logout(failed) -->
-</suite> <!-- Failed suite [Amazon Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -8,23 +8,25 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
-public class SearchResultPage {
+public class CartDetailsPage {
 	WebDriver driver;
 	WebDriverWait wait;
 
-	@FindBy(xpath = "(//div[@data-cy='title-recipe']/child::a)[1]")
-	WebElement selectedProductElement;
+	@FindBy(name = "proceedToRetailCheckout")
+	WebElement proceedToBuyBtnElement;
 
-	public SearchResultPage(WebDriver driver) {
+	public CartDetailsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-	public void clickOnTheProduct() {
-//		wait.until(ExpectedConditions.titleContains("Amazon.in : iphone"));
-		wait.until(ExpectedConditions.visibilityOf(selectedProductElement));
-		selectedProductElement.click();
+	public void clickOnProceedToBuyButton() {
+		wait.until(ExpectedConditions.visibilityOf(proceedToBuyBtnElement));
+		proceedToBuyBtnElement.click();
+		Reporter.log("Clicked on Proceed To Buy button...");
 	}
+
 }

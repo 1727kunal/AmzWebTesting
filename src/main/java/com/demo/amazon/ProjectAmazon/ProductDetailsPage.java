@@ -17,11 +17,15 @@ public class ProductDetailsPage {
 	WebElement addToWishListElement;
 	@FindBy(xpath = "//i[@class='a-icon a-icon-close']")
 	WebElement closePopUpBtnElement;
+	@FindBy(xpath = "(//input[@id='add-to-cart-button'])[2]")
+	WebElement addToCartBtnElement;
+	@FindBy(id = "nav-cart-count")
+	WebElement cartIconElement;
 
 	public ProductDetailsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
 	public void clickOnWishListButton() {
@@ -32,5 +36,15 @@ public class ProductDetailsPage {
 	public void clickOnClosePopUpButton() {
 		wait.until(ExpectedConditions.visibilityOf(closePopUpBtnElement));
 		closePopUpBtnElement.click();
+	}
+
+	public void clickOnAddToCartButton() {
+		wait.until(ExpectedConditions.visibilityOf(addToCartBtnElement));
+		addToCartBtnElement.click();
+	}
+
+	public void clickOnCartIcon() {
+		wait.until(ExpectedConditions.visibilityOf(cartIconElement));
+		cartIconElement.click();
 	}
 }
