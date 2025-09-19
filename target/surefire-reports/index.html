@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Amazon_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Amazon Suite</span>
+              <span class="suite-name border-failed">Amazon Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Amazon_Suite" class="hide-methods failed suite-Amazon_Suite"> (hide)</a> <!-- hide-methods failed suite-Amazon_Suite -->
+                      <a href="#" panel-name="suite-Amazon_Suite" class="show-methods failed suite-Amazon_Suite"> (show)</a> <!-- show-methods failed suite-Amazon_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Amazon_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Amazon_Suite" title="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment" class="method navigator-link" hash-for-method="verifyCheckoutProcess">verifyCheckoutProcess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Amazon_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,11 +125,6 @@
                         <a href="#" panel-name="suite-Amazon_Suite" title="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout" class="method navigator-link" hash-for-method="performLoginAndLogout">performLoginAndLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Amazon_Suite" title="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment" class="method navigator-link" hash-for-method="verifyCheckoutProcess">verifyCheckoutProcess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Amazon_Suite -->
                   </li>
                 </ul>
@@ -128,6 +137,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Amazon_Suite" class="panel Amazon_Suite">
+          <div class="suite-Amazon_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutProcess">
+                  </a> <!-- verifyCheckoutProcess -->
+                  <span class="method-name">verifyCheckoutProcess</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.demo.amazon.ProjectAmazon.PaymentDetailsPage.enterCreditCardNumber(PaymentDetailsPage.java:41)
+	at com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment.verifyCheckoutProcess(AmzAddToCartToPayment.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe&quot;}
+  (Session info: chrome=140.0.7339.185)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1672fd72b5f285ec6b661b958b423577, findElement {value=(//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.185, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59806/devtoo..., se:cdpVersion: 140.0.7339.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1672fd72b5f285ec6b661b958b423577
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1117)
+	at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:545)
+	at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:541)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Amazon_Suite-class-failed -->
           <div class="suite-Amazon_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -139,21 +200,6 @@
                   <a name="fromAddToWishListToAddToCart">
                   </a> <!-- fromAddToWishListToAddToCart -->
                   <span class="method-name">fromAddToWishListToAddToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Amazon_Suite-class-passed -->
-          <div class="suite-Amazon_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCheckoutProcess">
-                  </a> <!-- verifyCheckoutProcess -->
-                  <span class="method-name">verifyCheckoutProcess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,15 +291,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCheckoutProcess')
 data.setCell(0, 2, 'com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment')
-data.setCell(0, 3, 54501);
+data.setCell(0, 3, 65004);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'fromAddToWishListToAddToCart')
 data.setCell(1, 2, 'com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart')
-data.setCell(1, 3, 51461);
+data.setCell(1, 3, 57349);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'performLoginAndLogout')
 data.setCell(2, 2, 'com.demo.amazon.ProjectAmazon.AmzLoginAndLogout')
-data.setCell(2, 3, 14615);
+data.setCell(2, 3, 16158);
 window.suiteTableData['Amazon_Suite']= { tableData: data, tableDiv: 'times-div-Amazon_Suite'}
 return data;
 }
@@ -316,7 +362,6 @@ return data;
                 <span class="reporter-method-output">Clicked on Proceed To Buy button...</span>
                 <span class="reporter-method-output">Clicked on the Card Radio Button...</span>
                 <span class="reporter-method-output">Clicked on the Add New Card Link...</span>
-                <span class="reporter-method-output">Credit card number entered...</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -341,41 +386,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">performLoginAndLogout</span>
-                <span class="method-start">6870 ms</span>
+                <span class="method-start">23255 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21494 ms</span>
+                <span class="method-start">39422 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">21947 ms</span>
+                <span class="method-start">40074 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">fromAddToWishListToAddToCart</span>
-                <span class="method-start">28531 ms</span>
+                <span class="method-start">49604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79992 ms</span>
+                <span class="method-start">106955 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">80528 ms</span>
+                <span class="method-start">107583 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyCheckoutProcess</span>
-                <span class="method-start">86189 ms</span>
+                <span class="method-start">114899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">140695 ms</span>
+                <span class="method-start">179922 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

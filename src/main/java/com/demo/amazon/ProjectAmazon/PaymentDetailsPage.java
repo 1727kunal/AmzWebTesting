@@ -16,7 +16,7 @@ public class PaymentDetailsPage {
 	WebElement cardRadioElement;
 	@FindBy(partialLinkText = "Add a new credit or debit card")
 	WebElement addNewCardElement;
-	@FindBy(xpath = "(//div[@class='a-fixed-left-grid-col a-col-right'])[5]/child::iframe")
+	@FindBy(xpath = "(//div[@class='a-fixed-left-grid-col a-col-right'])[6]/child::iframe")
 	WebElement paymentFrameElement;
 	@FindBy(name = "addCreditCardNumber")
 	WebElement creditCardTxtElement;
