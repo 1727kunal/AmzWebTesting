@@ -9,52 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Amazon Suite</th></tr>
-<tr><td><a href="#t0">Amazon Login-Logout</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">40,012</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Amazon AddToWishList-AddToCart</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">67,501</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Amazon AddToCart-Checkout</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">72,904</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">180,417</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Amazon Login-Logout</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,954</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Amazon Login-Logout &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.demo.amazon.ProjectAmazon.AmzLoginAndLogout</td><td><a href="#m0">performLoginAndLogout</a></td><td rowspan="1">1758296019347</td><td rowspan="1">16158</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Amazon AddToWishList-AddToCart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart</td><td><a href="#m1">fromAddToWishListToAddToCart</a></td><td rowspan="1">1758296045696</td><td rowspan="1">57349</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Amazon AddToCart-Checkout &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment</td><td><a href="#m2">verifyCheckoutProcess</a></td><td rowspan="1">1758296110991</td><td rowspan="1">65004</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Amazon Login-Logout &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.demo.amazon.ProjectAmazon.AmzLoginAndLogout</td><td><a href="#m0">performLoginAndLogout</a></td><td rowspan="1">1758366922642</td><td rowspan="1">15014</td></tr></tbody>
 </table>
-<h2>Amazon Login-Logout</h2><h3 id="m0">com.demo.amazon.ProjectAmazon.AmzLoginAndLogout#performLoginAndLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Moved to Accounts and List...<br/>Clicked on Sign In button...<br/>Mobile number entered...<br/>Clicked on Continue button...<br/>Password entered...<br/>Clicked on Sign In button...<br/>Moved to Accounts and List...<br/>Clicked on Sign Out button...</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Amazon AddToWishList-AddToCart</h2><h3 id="m1">com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart#fromAddToWishListToAddToCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Moved to Accounts and List...<br/>Clicked on Sign In button...<br/>Mobile number entered...<br/>Clicked on Continue button...<br/>Password entered...<br/>Clicked on Sign In button...<br/>Searched for product xiaomi...<br/>Clicked on 1st product from search result...<br/>Clicked on Add To Wish List button...<br/>Pop-up closed...<br/>Moved to Accounts and List...<br/>Clicked on Your Wish List button...<br/>Product added to the cart...<br/>Clicked on Cart Icon...<br/>Product deleted from the cart...</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Amazon AddToCart-Checkout</h2><h3 id="m2">com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment#verifyCheckoutProcess</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Moved to Accounts and List...<br/>Clicked on Sign In button...<br/>Mobile number entered...<br/>Clicked on Continue button...<br/>Password entered...<br/>Clicked on Sign In button...<br/>Searched for product xiaomi...<br/>Clicked on 1st product from search result...<br/>Clicked on Proceed To Buy button...<br/>Clicked on the Card Radio Button...<br/>Clicked on the Add New Card Link...</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.demo.amazon.ProjectAmazon.PaymentDetailsPage.enterCreditCardNumber(PaymentDetailsPage.java:41)
-	at com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment.verifyCheckoutProcess(AmzAddToCartToPayment.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe&quot;}
-  (Session info: chrome=140.0.7339.185)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1672fd72b5f285ec6b661b958b423577, findElement {value=(//div[@class=&apos;a-fixed-left-grid-col a-col-right&apos;])[5]/child::iframe, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.185, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59806/devtoo..., se:cdpVersion: 140.0.7339.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1672fd72b5f285ec6b661b958b423577
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy9.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1117)
-	at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:545)
-	at org.openqa.selenium.support.ui.ExpectedConditions$19.apply(ExpectedConditions.java:541)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Amazon Login-Logout</h2><h3 id="m0">com.demo.amazon.ProjectAmazon.AmzLoginAndLogout#performLoginAndLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Moved to Accounts and List...<br/>Clicked on Sign In button...<br/>Mobile number entered...<br/>Clicked on Continue button...<br/>Password entered...<br/>Clicked on Sign In button...<br/>Moved to Accounts and List...<br/>Moved to Accounts and List...<br/>Clicked on Sign Out button...</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

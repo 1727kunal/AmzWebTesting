@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 public class HomePage {
 	WebDriver driver;
@@ -38,6 +39,7 @@ public class HomePage {
 		Actions act = new Actions(driver);
 		wait.until(ExpectedConditions.visibilityOf(tabAccountsAndListsElement));
 		act.moveToElement(tabAccountsAndListsElement).perform();
+		Reporter.log("Moved to Accounts and List...");
 	}
 
 	public void clickSignInBtn() {

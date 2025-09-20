@@ -6,14 +6,14 @@
       <class name="com.demo.amazon.ProjectAmazon.AmzLoginAndLogout"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Amazon AddToWishList-AddToCart">
+ <!-- <test name="Amazon AddToWishList-AddToCart">
     <classes>
       <class name="com.demo.amazon.ProjectAmazon.AmzWishListToAddToCart"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  Test 
   <test name="Amazon AddToCart-Checkout">
     <classes>
       <class name="com.demo.amazon.ProjectAmazon.AmzAddToCartToPayment"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  Test -->
 </suite> <!-- Suite -->

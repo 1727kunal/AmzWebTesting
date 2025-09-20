@@ -13,7 +13,7 @@ public class AmzLoginAndLogout extends BaseClass {
 		objLoginPage = new LoginPage(driver);
 
 		objHomePage.moveToAccountsTab();
-		Reporter.log("Moved to Accounts and List...");
+//		Reporter.log("Moved to Accounts and List...");
 		objHomePage.clickSignInBtn();
 		Reporter.log("Clicked on Sign In button...");
 
